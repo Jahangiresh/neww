@@ -1,0 +1,25 @@
+using System;
+using System.Collections;
+
+namespace ConsoleApp20
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SortedList sortedlist = new SortedList();
+            sortedlist.Add(2010, "C#");
+            sortedlist.Add(2011, "java");
+            sortedlist.Add(2012, "hull Shuttle");
+            sortedlist.Add(2013, "kotlin");
+            foreach (DictionaryEntry item in sortedlist)
+            {
+                Console.WriteLine(item.Key+" "+item.Value);
+            }
+            foreach (DictionaryEntry item in sortedlist)
+            {
+                Console.WriteLine(item.Value + " " + item.Key);
+            }
+        }
+    }
+}
